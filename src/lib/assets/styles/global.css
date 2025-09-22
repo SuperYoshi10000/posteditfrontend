@@ -1,0 +1,11 @@
+* {
+    font-family: "Roboto", sans-serif;
+    --color-text-1: #222222;
+    --color-bg-1: #ffffff;
+    --color-bg-2: #f0f0f0;
+    --color-accent-1: #007fff;
+    --color-accent-1a: #006fef;
+    
+    color: var(--color-text-1);
+    background-color: var(--color-bg-1);
+}
