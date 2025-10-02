@@ -5,14 +5,17 @@
   	import Footer from '$lib/components/Footer.svelte';
   	import Header from '$lib/components/Header.svelte';
 
+	export let data;
 	export let children;
+	
+	let {user} = data;
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<Header />
+<Header user={user} />
 <div class="header-spacer" style:height="4rem"></div>
 <main>
 	{@render children?.()}

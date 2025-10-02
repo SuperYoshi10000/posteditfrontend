@@ -1,4 +1,5 @@
 <script lang="ts">
+    import type { User } from "$lib/api";
     import Button from "./Button.svelte";
 
     export let user: User | undefined = undefined;
@@ -7,6 +8,7 @@
 <header>
     <nav class="nav-left">
         <Button href="/" theme="invert">Home</Button>
+        <Button href="/users" theme="invert">Users</Button>
     </nav>
     <nav class="nav-right">
         {#if user}
