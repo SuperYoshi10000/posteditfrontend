@@ -236,7 +236,8 @@ export async function request<T extends object = object>(path: string, method: s
     const res = await fetch(url, {
         method,
         headers: {
-            // "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Content-Type": "application/json",
             ...(auth ? {"Authorization": `Bearer ${auth}`} : {}),
             // ...(request.CLIENT ? {"X-Client-Origin": window.location.origin}: {}),
         },

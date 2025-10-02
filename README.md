@@ -7,3 +7,7 @@ You can also see a list of users at `/users`, or the profile page of a specific 
 
 ## API
 See the API [here](https://github.com/SuperYoshi10000/posteditapi)
+
+---
+
+_If something isn't working, go complain to the Nest admins for not responding to my question in time_
