@@ -1,6 +1,6 @@
 import API, { getToken } from "$lib/api";
 
 export async function load({ cookies }) {
-    const user = (await API.Account.getUserFromToken(getToken(cookies))).user;
+    let user = await API.Account.getUserFromToken(getToken(cookies)).then(res => res.user, () => undefined);
 	return { user };
 }
