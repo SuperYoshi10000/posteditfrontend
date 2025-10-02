@@ -10,4 +10,4 @@ See the API [here](https://github.com/SuperYoshi10000/posteditapi)
 
 ---
 
-_If something isn't working, go complain to the Nest admins for not responding to my question in time_
+_If something isn't working, ~~go complain to the Nest admins for not responding to my question in time~~ try using the API instead._
