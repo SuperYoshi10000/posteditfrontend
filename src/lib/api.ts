@@ -237,7 +237,7 @@ export async function request<T extends object = object>(path: string, method: s
         method,
         headers: {
             "Accept": "application/json",
-            "Content-Type": "application/json",
+            // "Content-Type": "application/json",
             ...(auth ? {"Authorization": `Bearer ${auth}`} : {}),
             // ...(request.CLIENT ? {"X-Client-Origin": window.location.origin}: {}),
         },
