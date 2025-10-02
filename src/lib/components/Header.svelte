@@ -1,14 +1,22 @@
-<script>
+<script lang="ts">
     import Button from "./Button.svelte";
+
+    export let user: User | undefined = undefined;
 </script>
 
 <header>
     <nav class="nav-left">
-        <Button href="/">Home</Button>
+        <Button href="/" theme="invert">Home</Button>
     </nav>
     <nav class="nav-right">
-        <Button href="/auth/login">Login</Button>
-        <Button href="/auth/register">Register</Button>
+        {#if user}
+            <Button href="/account/settings" theme="invert">Settings</Button>
+            <Button href="/users/{user.name}/posts" theme="invert">Your Posts</Button>
+            <Button href="/users/{user.name}" theme="invert">{user.name}</Button>
+        {:else}
+            <Button href="/auth/login" theme="invert">Login</Button>
+            <Button href="/auth/register" theme="invert">Register</Button>
+        {/if}
     </nav>
 </header>
 <style>

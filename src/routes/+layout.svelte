@@ -22,9 +22,13 @@
 <style>
 	:global(*) {
 		font-family: "Roboto", sans-serif;
+		box-sizing: border-box;
+
 		--color-text-1: #222222;
+		--color-text-1a: #333333;
+		--color-line-1: #555555;
 		--color-bg-1: #ffffff;
-		--color-bg-2: #f0f0f0;
+		--color-bg-1a: #f0f0f0;
 		--color-accent-1: #005fdf;
 		--color-accent-1a: #008fff;
 		--hover-overlay: #00000020;
