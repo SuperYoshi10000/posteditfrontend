@@ -3,6 +3,6 @@
     export let user: User;
 </script>
 
-<span class="user-label">
+<div class="user-label">
     <a href="/users/{user.name}">{user.name}</a>
-</span>
+</div>
